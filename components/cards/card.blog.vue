@@ -1,6 +1,6 @@
 <template>
    <div class="">
-      <div class="grid grid-cols-4 max-md:grid-cols-1 gap-8 bg-white">
+      <div class="grid grid-cols-3 max-md:grid-cols-1 gap-16 bg-white">
          <div v-for="BG in BLOGS" class="flex flex-col gap-4">
             <div class="bg-white shadow-md relative">
                <div class="absolute w-20 bg-white top-6 left-6">

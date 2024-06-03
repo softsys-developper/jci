@@ -16,15 +16,8 @@ import { useDataStore } from '@/stores/data.store';
          />
       </div>
 
-      <CardsCardActivity  :end="16" />
+      <CardsCardActivity :end="16"  />
 
-      <NuxtLink to="/activity" class="flex justify-center">
-         <Button :style="'background-color: ' +  useDataStore().users?.color_1"
-            class=" px-4 py-4 flex items-center gap-2 text-base"
-         >
-            <span class="">Voir plus images</span>
-            <i class="ri-arrow-right-line"></i>
-         </Button>
-      </NuxtLink>
+     
    </div>
 </template>

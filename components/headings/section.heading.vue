@@ -5,8 +5,8 @@ import {useDataStore} from "@/stores/data.store"
 
 <template>
    <div class="flex flex-col gap-3" >
-      <span :style="'background-color: ' +  useDataStore().users?.color_1" class="inline-flex h-[3px] w-16 "></span>
-      <span :style="'color: ' +  useDataStore().users?.color_1"  class="text-lg  font-bold"> {{ subtitle }} </span>
-      <span   class="text-4xl font-bold"> {{ title }} </span>
+      <span :style="'background-color: ' + useDataStore().users.color_1" class="inline-flex h-[3px] w-16 "></span>
+      <span :style="'color: ' +  useDataStore().users?.color_1"  class="text-lg  font-bold lowercase first-letter:uppercase"> {{ subtitle }} </span>
+      <span   class="lg:text-4xl text-2xl font-bold"> {{ title }} </span>
    </div>
 </template>

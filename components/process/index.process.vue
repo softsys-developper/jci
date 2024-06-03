@@ -28,23 +28,29 @@ import {useDataStore} from "@/stores/data.store"
         description: "Que la personne humaine est la plus précieuse des richesses. "
     },
 
+     {
+        icon: 'ri-team-line',
+        title: 'Humanité',
+        description: "Et Que Servir l’humanité continue l’œuvre la plus noble d’une vie.. "
+    },
+
     ]
 
 </script>
 
 <template>
-   <div class="bg-gray-700 h-[25vh] mb-32">
+   <div class="bg-gray-700 ">
    
    <div class="text-white w-full flex justify-center relative top-8">   
-    <span class="text- text-lg">Note Crédo, Ce en quoi nous croyons.</span>
+    <span class="text- text-lg">Notre Crédo, Ce en quoi nous croyons.</span>
    </div>
 
 
-   <div class="grid lg:grid-cols-5 grid-cols-1 lg:gap-8 gap-4 w-11/12 m-auto relative top-16">
+   <div class="grid lg:grid-cols-6 grid-cols-1 lg:gap-4 gap-4 w-11/12 m-auto relative top-16">
    
     <div v-for="(PS, index) in Process">   
  
-    <div class="bg-white px-4 py-8 lg:h-[250px] h-auto shadow-2xl gap-4 flex flex-col">
+    <div class="bg-white px-4 py-8 lg:h-[250px] h-auto shadow-2xl gap-4 flex flex-col rounded-md">
         
         <div class="flex justify-between">
         
@@ -56,7 +62,7 @@ import {useDataStore} from "@/stores/data.store"
 
 
         <div class="flex flex-col gap-2">
-            <span class="lg:text-lg text-xl font-bold opacity-90 " :style="'color: ' +  useDataStore().users?.color_1"> {{ PS.title }} </span>
+            <span class="lg:text-lg text-xl font-bold opacity-90 leading-6 " :style="'color: ' +  useDataStore().users?.color_1"> {{ PS.title }} </span>
             <span class="text-sm font-medium opacity-90 text-gray-500"> {{ PS.description }} </span>
         </div>
 

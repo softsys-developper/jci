@@ -49,7 +49,7 @@ const Axes = [
 <template>
    <!-- About Details -->
    <div
-      class="lg:pt-48 pt-[60rem] mb-32 "
+      class="lg:pt-48 pt-[8rem] mb-32 "
    >
      <ProcessCardAbout />
    </div>

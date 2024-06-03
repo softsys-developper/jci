@@ -18,18 +18,10 @@ const more = ref(16);
    <div class="flex flex-col gap-8 w-11/12 m-auto mb-32">
       <div class="text-4xl font-exo font-bold"></div>
 
-      <CardsCardActivity :end="more" />
-
-      <div class="flex justify-center">
-         <Button
-         @click="more = more + 8"
-         :style="'background-color: ' + useDataStore().users?.color_1"
-         class="px-4 py-4 flex items-center gap-2 text-base"
-      >
-         <span class="">Voir plus </span>
-         <i class="ri-arrow-right-line"></i>
-      </Button>
-      </div>
+      <CardsCardActivity :end="more" :size="useDataStore().portfolio.length" />
+      
+      
+      
    </div>
    <FootersIndexFooter />
 </template>

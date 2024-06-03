@@ -30,7 +30,7 @@ const GetUsers = async () => {
 };
 
 onMounted(() => {
-   if (useDataStore().users == null) {
+   if (!useDataStore().users?.name) {
       GetUsers();
    }
 
@@ -44,7 +44,7 @@ onMounted(() => {
 
 <template>
    
-   <div v-if="useDataStore().users && Start" class="bg-white w-full h-full">
+   <div v-if="useDataStore().users?.name && Start" class="bg-white w-full h-full">
       <NuxtPage />
    </div>
 
