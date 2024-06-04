@@ -17,7 +17,7 @@
 
       <!--  -->
       <div class="flex flex-col gap-8 mt-16 lg:mt-0">
-         <HeadingsSectionHeading subtitle="A Propos" :title="'A props JCI ' + useDataStore().users?.name" />
+         <HeadingsSectionHeading subtitle="A Propos" :title="'A propos JCI ' + useDataStore().users?.name" />
 
          <div class="flex flex-col gap-4">
             <article

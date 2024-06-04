@@ -8,7 +8,7 @@ import { NAME } from './public/api/token';
 
 
 useHead({
-  title: useDataStore().users?.name || '(JCI) Jeune Chambre International',
+  title: useDataStore().users?.name || '(JCI) Jeune Chambre Internationale',
   meta: [
    {
       "name": "title",
