@@ -45,7 +45,7 @@ onMounted(() => {
 <template>
    
    <div v-if="useDataStore().users?.name && Start" class="bg-white w-full h-full">
-      <<RouterView />
+      <RouterView />
    </div>
 
    <div class="flex h-screen w-full justify-center items-center" v-if="!Start" >
