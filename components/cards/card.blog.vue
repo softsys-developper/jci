@@ -1,8 +1,8 @@
 <template>
    <div class="">
       <div class="grid grid-cols-3 max-md:grid-cols-1 gap-16 bg-white">
-         <div v-for="BG in BLOGS" class="flex flex-col gap-4">
-            <div class="bg-white shadow-md relative">
+         <div v-for="BG in useDataStore().blogs" class="flex flex-col gap-4 ">
+            <div class="bg-white shadow-md relative min-h-full relative">
                <div class="absolute w-20 bg-white top-6 left-6">
                   <div
                      :style="
@@ -29,10 +29,10 @@
                   />
                </div>
 
-               <div class="flex flex-col p-4 gap-2">
+               <div class="flex flex-col p-4 gap-2 ">
                   
 
-                  <div class="flex flex-col">
+                  <div class="flex flex-col h-[100px]">
                      <article v-html="BG.title" class="text-lg font-semibold font-blog  line-clamp-2">
                      </article>
                      <article v-html="BG.content" class="text-sm  font-blog  line-clamp-2">
@@ -41,7 +41,7 @@
 
                   <NuxtLink
                      :to="'/blogs/articles?id='+BG?.id"
-                     class="flex px-4 py-2 bg-gray-100 cursor-pointer mt-4 justify-between w-full"
+                     class="flex px-4 py-2 bg-gray-100 cursor-pointer  justify-between w-full"
                   >
                      <span class="text-sm font-semibold">Voir l'article</span>
                      <i class="ri-arrow-right-line"></i>
@@ -72,9 +72,7 @@ const BLOGS = ref([])
 const BLOG_CACHE = ref([]);
 const props = defineProps(['start', 'end']);
 
-const __BLOGS = computed(() => {
-   BLOGS.value = useDataStore().blogs?.reverse()
-});
+
 
 const OnLoaded =  () => {
  
