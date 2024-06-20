@@ -8,7 +8,7 @@
       :sub="`Dernières nouvelles de la JCI ${useDataStore().users?.name}`"
    />
 
-   <div class="w-11/12 m-auto mt-24">
+   <div class="w-11/12 m-auto mt-8">
    
       <CardsCardBlog />
    
