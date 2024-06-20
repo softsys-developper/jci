@@ -73,7 +73,7 @@ const BLOG_CACHE = ref([]);
 const props = defineProps(['start', 'end']);
 
 const __BLOGS = computed(() => {
-   BLOGS.value = useDataStore().blogs?.reverse()
+   BLOGS.value = useDataStore().blogs
 });
 
 const OnLoaded =  () => {
