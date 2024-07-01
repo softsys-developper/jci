@@ -51,7 +51,7 @@
          </div>
       </div>
    </div>
-   {{ __BLOGS }}
+
 </template>
 <script setup>
 import { useDataStore } from '@/stores/data.store';
@@ -71,10 +71,6 @@ const GetBlogs = async () => {
 const BLOGS = ref([])
 const BLOG_CACHE = ref([]);
 const props = defineProps(['start', 'end']);
-
-const __BLOGS = computed(() => {
-   BLOGS.value = useDataStore().blogs?.reverse()
-});
 
 const OnLoaded =  () => {
  
