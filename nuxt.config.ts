@@ -20,7 +20,6 @@ export default defineNuxtConfig({
         { rel:"icon", type:"image/png", href:"/logos/abidjan_logo.png"},
         { rel: 'stylesheet', href: 'https://use.typekit.net/vjy4axf.css' }
       ],
-
     }
   },
   modules: ["@nuxtjs/tailwindcss", "shadcn-nuxt", '@pinia/nuxt', "@nuxt/image", 'nuxt-time', 'nuxt-swiper'],
