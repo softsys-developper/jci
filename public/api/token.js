@@ -2,4 +2,4 @@ export const TOKEN = 'Bearer 6dc6b64efca60ad4a4d207e01ef26e0369dbf87ded351f4d03c
 
 export const ID = 5; export const NAME = 'Yopougon'; const LONG = 'Yopougon'
 
-// npm run generate && clear && git add ./ && git commit -m "Update Yopougon #1" && git push -u origin yopougon
+// npm run generate && clear && git add ./ && git commit -m "Update Yopougon #3" && git push -u origin yopougon

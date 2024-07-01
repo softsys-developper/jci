@@ -16,7 +16,7 @@ export default defineNuxtConfig({
       ],
 
       link: [
-        { rel:"icon", type:"image/png", href:"/logos/yopougon_logo.png.png"},
+        { rel:"icon", type:"image/png", href:"/logos/yopougon_logo.png"},
         { rel: 'stylesheet', href: 'https://use.typekit.net/vjy4axf.css' }
       ],
 
