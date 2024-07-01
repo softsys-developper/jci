@@ -73,7 +73,8 @@ const BLOG_CACHE = ref([]);
 const props = defineProps(['start', 'end']);
 
 const OnLoaded =  () => {
- 
+   BLOGS.value = useDataStore().blogs;
+   BLOG_CACHE.value = BLOGS.value;
 
    // GALERIE_CACHE.value = GALERIES.value;
 }
